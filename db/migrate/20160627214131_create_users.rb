@@ -5,7 +5,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email, presence: true, uniqueness: true
       t.string :password_digest, presence:true
 
-      t.timestamps(null:false)
+      t.timestamps null: false
     end
   end
 end
