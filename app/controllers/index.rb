@@ -1,3 +1,3 @@
 get '/' do
-  redirect '/'  #redirect to main page
+  redirect '/users'  #EDIT THIS******** this should redirect to whatever is the main page
 end
