@@ -1,3 +1,3 @@
 10.times do
-  User.create!(username: Faker::Name.first_name, email: Faker::Internet.email, password: '123')  
+  User.create!(first_name: Faker::Name.first_name, username: Faker::Name.last_name, email: Faker::Internet.email, password: '123')  
 end
