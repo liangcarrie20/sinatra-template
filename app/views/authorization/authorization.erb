@@ -1,0 +1,30 @@
+  <% if @error %>
+    <%= @error %>
+  <% end %>
+<div class="container">
+  <h1>Log in to Listeners</h1>
+</div>
+<div class="container">
+  <div class="col-sm-4">
+  <form>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" name ="user[email]" class="form-control" id="email" placeholder="Email">
+    </div>
+ 
+    <div class="form-group">
+      <label for="password">Password::</label>
+      <input type="password" name="user[password]" class="form-control" id="password" placeholder="Password">
+    </div>
+    <div>
+      <input type="submit" value"Log in" class="btn btn-primary" formaction="/authorization" formmethod="post">
+    </div>
+    
+  </form>
+</div>
+</div><br><br><br><br><br><br><br><br>
+
+
+
+
+ 
