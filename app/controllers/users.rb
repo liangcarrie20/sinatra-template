@@ -39,7 +39,7 @@ post '/sessions' do
   if @user && @user.authenticate(params[:user][:password])
     session[:id] = @user[:id]
     # redirects to main page ..
-    redirect '/'
+    redirect '/users'
   else
     # error handling could be handled here..
     p "Your password and or email was incorrect"
