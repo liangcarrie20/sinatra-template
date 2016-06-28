@@ -1,6 +1,6 @@
 helpers do
 # finds user if logged in
   def current_user
-    User.find(session[:id]) if session[:id]
+    @current_user ||=User.find_by(id: session[:user_id])
   end
 end
